@@ -52,7 +52,7 @@ import {
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
     {todos &&
     todos.map((todo) => (
-    <Box
+    <Box key={todo.key}
     p={3}
     boxShadow="2xl"
     shadow={"dark-lg"}
