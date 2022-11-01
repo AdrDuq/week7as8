@@ -11,7 +11,7 @@ import {
     import { collection, onSnapshot, query, where } from "firebase/firestore";
     import { db } from "../firebase";
     import { FaTrash } from "react-icons/fa";
-    import { deleteEvent, editEvent } from "../api/event";
+    import { deleteEvent } from "../api/event";
     const EventList = () => {
     const [events, setEvents] = React.useState([]);
     const {  user } = useAuth();

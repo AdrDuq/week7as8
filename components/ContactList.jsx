@@ -11,7 +11,7 @@ import {
     import { collection, onSnapshot, query, where } from "firebase/firestore";
     import { db } from "../firebase";
     import { FaTrash } from "react-icons/fa";
-    import { deleteContact, editContact } from "../api/contact";
+    import { deleteContact} from "../api/contact";
     const ContactList = () => {
     const [contacts, setContacts] = React.useState([]);
     const {  user } = useAuth();
